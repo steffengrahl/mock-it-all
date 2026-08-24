@@ -2,9 +2,9 @@
 layout: default
 ---
 
-`mock-it-all` automatically creates PHPUnit test classes with mocked constructor dependencies — so you can go from a production class to a ready-to-use test in seconds.
+`mock-it-all` automatically creates test scaffolding with mocked constructor dependencies — so you can go from a production class to an empty, ready-to-fill test class with all required mocks in seconds.
 
-**Give it a class. Get a test.**
+**Give it a class. Get a test scaffold.**
 
 [Get Started](#get-started) · [See how it works](#how-it-works)
 
@@ -41,7 +41,7 @@ Finally write the test
 ```text
 Give it a class
      ↓
-Get a test
+Get a test scaffold with mocks
      ↓
 Write the behavior you actually want to test
 ```
@@ -72,7 +72,7 @@ No starting from an empty test file.
 
 ### 3. Start testing
 
-A ready-to-use PHPUnit test class is generated directly in your test directory — with the required mocks and the class under test already wired up.
+An empty PHPUnit test class is generated directly in your test directory — pre-configured with all required mocks and the class under test already wired up.
 
 The boring part is done.
 
@@ -86,9 +86,9 @@ Now you can focus on the reason the test exists in the first place: **testing be
 
 Constructor dependencies are detected and mocked automatically, so you don't have to set them up by hand.
 
-### 🧪 Start with a real test
+### 🧪 Start with mocks in place
 
-Instead of an empty test class, start with the structure you actually need — mocks, dependencies and the class under test already in place.
+Instead of an empty test file where you have to set up everything by hand, get an empty test class with all required mocks, dependencies and the subject under test already wired up.
 
 ### 🔄 Keep up with changing constructors
 
@@ -96,7 +96,7 @@ When a class gains or loses constructor dependencies, regenerating its test setu
 
 ### ⌨️ Stay in your workflow
 
-Generate tests directly from your terminal, right alongside your Composer project.
+Generate test classes directly from your terminal, right alongside your Composer project.
 
 ### 🤝 Use it your way
 
@@ -209,7 +209,7 @@ Test class
 
 ## CLI-first
 
-When you're already working in your terminal, generating a test shouldn't require leaving your workflow.
+When you're already working in your terminal, generating a test class skeleton shouldn't require leaving your workflow.
 
 Give `mock-it-all` the class you want to test and let it generate the starting point.
 
@@ -222,7 +222,7 @@ php ./vendor/bin/mock-it-all create-test-stub-with-mocks --fqcn="PatrickMaynard\
 ✓ Wiring dependencies  
 ✓ Generating test class
 
-## Test created successfully.
+## Test class created successfully.
 
 From there, you take over.
 
@@ -250,7 +250,7 @@ composer require --dev mock-it-all
 Then give it a class.
 
 ```text
-Your class → mock-it-all → your test
+Your class → mock-it-all → your test scaffold
 ```
 
 That's it.
@@ -263,22 +263,20 @@ You've already written the same mock setup before.
 
 Probably more than once.
 
-Let `mock-it-all` write it for you.
+Let `mock-it-all` generate the setup for you.
 
-**Give it a class. Get a test.**
+**Give it a class. Get a test scaffold.**
 
 ---
 
 ## About the author
 
-**Patrick is a software developer, freelance journalist, and English teacher based in Slovakia.**
+**Patrick is a software developer, freelance journalist and English teacher based in Slovakia.**
 
-His software development work focuses on **PHP, Symfony, and Laravel**, with a particular interest in building small, practical tools that remove repetitive work and solve everyday problems for developers.
+His software development work focuses on **PHP, Symfony and Laravel**, with a particular interest in building small, practical tools that remove repetitive work and solve everyday problems for developers.
 
 He is the author of **[`mock-it-all`](#)** and **[`audit-class-generator`](https://github.com/patrickmaynard/audit-class-generator)**.
 
 **`audit-class-generator`** helps developers navigate Twig template hierarchies by adding unique audit classes to rendered HTML elements. This makes it easy to identify the exact template responsible for an element directly from the browser.
 
 [Website](https://home.patrickmaynard.com) · [LinkedIn](https://www.linkedin.com/in/patrick-maynard-9346937/)
-
-*Native English · German · Czech · Slovak*
