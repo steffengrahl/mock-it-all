@@ -280,5 +280,3 @@ He is the author of **[`mock-it-all`](#)** and **[`audit-class-generator`](https
 **`audit-class-generator`** helps developers navigate Twig template hierarchies by adding unique audit classes to rendered HTML elements. This makes it easy to identify the exact template responsible for an element directly from the browser.
 
 [Website](https://home.patrickmaynard.com) · [LinkedIn](https://www.linkedin.com/in/patrick-maynard-9346937/)
-
-*Native English · German · Czech · Slovak*
